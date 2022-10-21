@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-randomizer",
+  "version": "1.0.0",
+  "description": "()\u001b[DSmall project on building a webApp to randomize local places to eat to answer the dumb question of where-should-we-eat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadmanhoque/restaurant-randomizer.git"
+  },
+  "author": "Sadman Sadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadmanhoque/restaurant-randomizer/issues"
+  },
+  "homepage": "https://github.com/sadmanhoque/restaurant-randomizer#readme",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "axios": "^1.1.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
