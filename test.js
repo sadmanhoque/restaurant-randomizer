@@ -7,7 +7,7 @@ function between(min, max) {
     Math.random() * (max - min) + min
   )
 }
-var rando = between(0, 21)
+
 //console.log(rando)
 
 //Inputs for testing the API
@@ -27,6 +27,8 @@ var config = {
   .then((response) =>{
     jsonData = JSON.stringify(response.data)
     jsonParsed = JSON.parse(jsonData)
+    var numberOfResults = Object.keys(jsonParsed.results).length
+    var rando = between(0, numberOfResults)
     console.log(jsonParsed.results[rando].name)
 
   })
