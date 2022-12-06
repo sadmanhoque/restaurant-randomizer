@@ -24,3 +24,5 @@ const randomResult = async (searchText, coordinates, searchRadius) => {
 
 //Used for testing the generator function
 console.log(randomResult('pie', '44.666070, -63.657702', '1000'));
+
+module.exports = randomResult;

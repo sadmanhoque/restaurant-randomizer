@@ -1,5 +1,6 @@
 const express = require('express')
 const { restart } = require('nodemon')
+const randomResult = require('./test2')
 const app = express()
 const port = 8383
 
@@ -19,7 +20,7 @@ app.post('/', (req, res) => {
         return res.status(400).send({status: 'failed'})
     }
     console.log(parcel)
-    //Should make a call to the Google API here
+    console.log(randomResult(parcel, '44.666070, -63.657702', '1000'));
     res.status(200).send({status: 'received'})
 })
 
