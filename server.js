@@ -15,10 +15,11 @@ app.get('/info/:dynamic', (req, res) => {
 
 app.post('/', (req, res) => {
     const {parcel} = req.body
-    console.log(parcel)
     if(!parcel){
         return res.status(400).send({status: 'failed'})
     }
+    console.log(parcel)
+    //Should make a call to the Google API here
     res.status(200).send({status: 'received'})
 })
 

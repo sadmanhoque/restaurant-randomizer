@@ -8,8 +8,6 @@ function between(min, max) {
   )
 }
 
-//console.log(rando)
-
 //Inputs for testing the API
 var input = 'sandwich'
 var location = '44.666070, -63.657702'
