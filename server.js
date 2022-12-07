@@ -21,7 +21,7 @@ app.post('/', (req, res) => {
         return res.status(400).send({status: 'failed'})
     }
     //console.log(parcel)
-    randomResult('pie', '44.666070, -63.657702', '1000').then(searchResult =>{
+    randomResult(parcel, '44.666070, -63.657702', '1000').then(searchResult =>{
         //console.log(searchResult)
         res.status(200).json({status: 'received', 'searchResult': searchResult})
       })
