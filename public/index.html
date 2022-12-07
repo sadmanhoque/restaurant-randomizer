@@ -8,30 +8,33 @@
 </head>
 <body>
     <form>
-        <input type="text" id="input"/>
+        <!--<label>Search Term: </label>-->
+        <input type="text" id="input"/><br>
         <button id="get">GET</button>
         <button id="post">POST</button>
-        <output name="output">n/a</output> 
-        <!--
-            <output name="output">n/a</output>  
-        -->
+        <button id="search">Search</button><br>
+        <input type="text" id="output"/>
+        <!--<output name="output">n/a</output> -->
+
     </form>
     <script>
         const getBtn = document.getElementById('get')
         const postBtn = document.getElementById('post') 
         const input = document.getElementById('input')
+        const output = document.getElementById('output')
+        const searchBtn = document.getElementById('search')
 
         const baseUrl = 'http://localhost:8383/'
 
         getBtn.addEventListener('click', getInfo)
         postBtn.addEventListener('click', postInfo)
+        searchBtn.addEventListener('click', searchInfo)
 
         async function getInfo(e){
             e.preventDefault()
             const res = await fetch(baseUrl + 'info/james?key=hello', {
                 method: 'GET'
             })
-            console.log(res)
             const data = await res.json()
             input.value = data.info
         }
@@ -48,6 +51,23 @@
                     parcel: input.value
                 })
             })
+        }
+
+        async function searchInfo(e){
+            e.preventDefault()
+            if(input.value == ''){return}
+            const res = await fetch(baseUrl, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": 'application/json'
+                },
+                body: JSON.stringify({
+                    parcel: input.value
+                })
+            })
+            const data = await res.json()
+            console.log(data.status)
+            output.value = data.searchResult
         }
         
 

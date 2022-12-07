@@ -16,13 +16,17 @@ const randomResult = async (searchText, coordinates, searchRadius) => {
         jsonParsed = JSON.parse(jsonData)
         const numberOfResults = Object.keys(jsonParsed.results).length
         const rando = between(0, numberOfResults)
-        console.log(jsonParsed.results[rando].name)
+        //console.log(jsonParsed.results[rando].name)
+        return Promise.resolve(jsonParsed.results[rando].name)
     } catch(err){
         console.log(err);
     }
 }
 
 //Used for testing the generator function
-console.log(randomResult('pie', '44.666070, -63.657702', '1000'));
+randomResult('pie', '44.666070, -63.657702', '1000').then(x =>{
+  console.log(x)
+})
+//console.log(randomResult('pie', '44.666070, -63.657702', '1000'));
 
 module.exports = randomResult;
