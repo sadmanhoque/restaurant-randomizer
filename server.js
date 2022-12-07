@@ -17,15 +17,17 @@ app.get('/info/:dynamic', (req, res) => {
 
 app.post('/', (req, res) => {
     const {parcel} = req.body
+    const {parcelCoordinates} = req.body
+    const {parcelRange} = req.body
+    //console.log(req.body.parcelRange)
     if(!parcel){
         return res.status(400).send({status: 'failed'})
     }
     //console.log(parcel)
-    randomResult(parcel, '44.666070, -63.657702', '1000').then(searchResult =>{
+    randomResult(parcel, parcelCoordinates, parcelRange).then(searchResult =>{
         //console.log(searchResult)
         res.status(200).json({status: 'received', 'searchResult': searchResult})
       })
-    
 })
 
 app.listen(port, () => console.log(`Server has started on port: ${port}`))

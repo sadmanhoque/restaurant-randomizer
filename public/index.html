@@ -9,7 +9,12 @@
 <body>
     <form>
         <!--<label>Search Term: </label>-->
+        Search Term:
         <input type="text" id="input"/><br>
+        Coordinates:
+        <input type="text" id="inputCoordinates"/><br>
+        Range in metres:
+        <input type="text" id="inputRange"/><br>
         <button id="get">GET</button>
         <button id="post">POST</button>
         <button id="search">Search</button><br>
@@ -20,6 +25,8 @@
         const getBtn = document.getElementById('get')
         const postBtn = document.getElementById('post') 
         const input = document.getElementById('input')
+        const inputCoordinates = document.getElementById('inputCoordinates')
+        const inputRange = document.getElementById('inputRange')
         const output = document.getElementById('output')
         const searchBtn = document.getElementById('search')
 
@@ -28,6 +35,25 @@
         getBtn.addEventListener('click', getInfo)
         postBtn.addEventListener('click', postInfo)
         searchBtn.addEventListener('click', searchInfo)
+
+        async function searchInfo(e){
+            e.preventDefault()
+            if(input.value == ''){return}
+            const res = await fetch(baseUrl, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": 'application/json'
+                },
+                body: JSON.stringify({
+                    parcel: input.value,
+                    parcelCoordinates: inputCoordinates.value,
+                    parcelRange: inputRange.value
+                })
+            })
+            const data = await res.json()
+            console.log(data.status)
+            output.value = data.searchResult
+        }
 
         async function getInfo(e){
             e.preventDefault()
@@ -50,25 +76,7 @@
                     parcel: input.value
                 })
             })
-        }
-
-        async function searchInfo(e){
-            e.preventDefault()
-            if(input.value == ''){return}
-            const res = await fetch(baseUrl, {
-                method: 'POST',
-                headers: {
-                    "Content-Type": 'application/json'
-                },
-                body: JSON.stringify({
-                    parcel: input.value
-                })
-            })
-            const data = await res.json()
-            console.log(data.status)
-            output.value = data.searchResult
-        }
-        
+        }       
 
     </script>
 </body>
