@@ -17,6 +17,7 @@ app.get('/info/:dynamic', (req, res) => {
 
 app.post('/', (req, res) => {
     const {parcel} = req.body
+    console.log(req.body.inputCoordinates)
     if(!parcel){
         return res.status(400).send({status: 'failed'})
     }
@@ -25,7 +26,6 @@ app.post('/', (req, res) => {
         //console.log(searchResult)
         res.status(200).json({status: 'received', 'searchResult': searchResult})
       })
-    
 })
 
 app.listen(port, () => console.log(`Server has started on port: ${port}`))
