@@ -19,7 +19,7 @@ var books = []book{
 	{ID: "3", Title: "Book three", Author: "Author three", Quantity: 7},
 }
 
-func getBooks(c *gin.context) {
+func getBooks(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, books)
 }
 
