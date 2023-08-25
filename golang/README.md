@@ -1,5 +1,7 @@
 ### Introduction ###
 
+Right now this directory is only a reference.
+
 This is meant to implement the restaurant-randomizer project but using Golang for the backend, I haven't yet decided about the front-end, might to React, or experiment with a Golang front-end server, could to both honestly.
 
 ## Project setup ##

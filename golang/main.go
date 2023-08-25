@@ -100,12 +100,34 @@ func createBook(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, newBook)
 }
 
+func corsMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, PATCH, POST")
+		c.Writer.Header().Set("Access-Control-Allow-Headers", "*")
+
+		if c.Request.Method == "OPTIONS" {
+			c.AbortWithStatus(204)
+			return
+		}
+
+		c.Next()
+	}
+}
+
 func main() {
 	router := gin.Default()
+
+	//Enable CORS for all origins, methods and headers
+	router.Use(corsMiddleware())
+
+	//Defining routes
 	router.GET("/books", getBooks)
 	router.GET("/books/:id", bookById)
 	router.POST("/books", createBook)
 	router.PATCH("/return", returnBook)
 	router.PATCH("/checkout", checkoutBook)
+
+	//Run the server
 	router.Run("localhost:8000")
 }
