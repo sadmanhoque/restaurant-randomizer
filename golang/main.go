@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -115,19 +117,38 @@ func corsMiddleware() gin.HandlerFunc {
 	}
 }
 
+func PerformGetRequest() {
+	//const myurl = "http://www.google.com"
+	const myurl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza&location=44.666070,-63.657702&radius=1000&key=NiceTryHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHa"
+
+	response, err := http.Get(myurl)
+
+	if err != nil {
+		panic(err)
+	}
+
+	defer response.Body.Close()
+
+	//fmt.Println("Status code: ", response.StatusCode)
+	fmt.Println(json.NewDecoder(response.Body))
+
+}
+
 func main() {
-	router := gin.Default()
+	//router := gin.Default()
 
 	//Enable CORS for all origins, methods and headers
-	router.Use(corsMiddleware())
+	//router.Use(corsMiddleware())
 
 	//Defining routes
-	router.GET("/books", getBooks)
-	router.GET("/books/:id", bookById)
-	router.POST("/books", createBook)
-	router.PATCH("/return", returnBook)
-	router.PATCH("/checkout", checkoutBook)
+	//router.GET("/books", getBooks)
+	//router.GET("/books/:id", bookById)
+	//router.POST("/books", createBook)
+	//router.PATCH("/return", returnBook)
+	//router.PATCH("/checkout", checkoutBook)
 
 	//Run the server
-	router.Run("localhost:8000")
+	//router.Run("localhost:8000")
+
+	PerformGetRequest()
 }
