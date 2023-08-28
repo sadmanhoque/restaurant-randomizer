@@ -1,12 +1,14 @@
 package main
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 type book struct {
@@ -118,8 +120,16 @@ func corsMiddleware() gin.HandlerFunc {
 }
 
 func PerformGetRequest() {
-	//const myurl = "http://www.google.com"
-	const myurl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza&location=44.666070,-63.657702&radius=1000&key=NiceTryHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHa"
+
+	envErr := godotenv.Load(".env")
+	if envErr != nil {
+		fmt.Println("Could not load .env file")
+		os.Exit(1)
+	}
+
+	var apiKey = os.Getenv("API_KEY")
+
+	var myurl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza&location=44.666070,-63.657702&radius=1000&key=" + apiKey
 
 	response, err := http.Get(myurl)
 
@@ -129,8 +139,11 @@ func PerformGetRequest() {
 
 	defer response.Body.Close()
 
-	//fmt.Println("Status code: ", response.StatusCode)
-	fmt.Println(json.NewDecoder(response.Body))
+	fmt.Println("Status code: ", response.StatusCode)
+
+	content, _ := io.ReadAll(response.Body)
+
+	fmt.Println(string(content))
 
 }
 
