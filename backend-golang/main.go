@@ -1,7 +1,7 @@
 package main
 
 import (
-	"errors"
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -11,11 +11,18 @@ import (
 	"github.com/joho/godotenv"
 )
 
+type location struct {
+	Name        string `json:"name"`
+	Address     string `json:"address"`
+	Hours       string `json:"hours"`
+	Coordinates string `json:"coordinates"`
+}
+
 func searchByItem(c *gin.Context) {
 	item := c.Param("item")
-	result, err := PerformGetRequest(item)
+	result := PerformGetRequest(item)
 
-	if err != nil {
+	if result == "" {
 		c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Something went wrong"})
 		return
 	}
@@ -38,13 +45,14 @@ func corsMiddleware() gin.HandlerFunc {
 	}
 }
 
-func PerformGetRequest(item string) (*result, error) {
+func PerformGetRequest(item string) string {
 
 	envErr := godotenv.Load(".env")
 	if envErr != nil {
 		fmt.Println("Could not load .env file")
 		os.Exit(1)
-		return nil, errors.New("Problem retreiving API key")
+		fmt.Println("Problem retreiving API key")
+		return ""
 	}
 
 	var apiKey = os.Getenv("API_KEY")
@@ -53,8 +61,8 @@ func PerformGetRequest(item string) (*result, error) {
 	response, err := http.Get(myurl)
 
 	if err != nil {
-		//panic(err)
-		return nil, errors.New("Problem with executing Google maps API")
+		fmt.Println("Problem with executing Google maps API")
+		return ""
 	}
 
 	defer response.Body.Close()
@@ -63,10 +71,24 @@ func PerformGetRequest(item string) (*result, error) {
 
 	content, _ := io.ReadAll(response.Body)
 
-	fmt.Println(string(content))
+	//fmt.Println(string(content))
 	result := string(content)
+	addressFinderValue := content
+	addressFinder(addressFinderValue)
 
 	return result
+}
+
+func addressFinder(content []byte) {
+	checkValid := json.Valid(content)
+	var address location
+
+	if checkValid {
+		json.Unmarshal(content, &address)
+		fmt.Printf("%#v\n", address)
+	} else {
+		fmt.Println("json format invlaid")
+	}
 }
 
 func main() {
@@ -79,7 +101,7 @@ func main() {
 	router.GET("/search/:item", searchByItem)
 
 	//Run the server
-	router.Run("localhost:900")
+	router.Run("localhost:9000")
 
 	//PerformGetRequest()
 }
