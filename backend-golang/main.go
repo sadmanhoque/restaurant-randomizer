@@ -33,7 +33,7 @@ func searchByItem(c *gin.Context) {
 func corsMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
-		c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, PATCH, POST")
+		c.Writer.Header().Set("Access-Control-Allow-Methods", "GET")
 		c.Writer.Header().Set("Access-Control-Allow-Headers", "*")
 
 		if c.Request.Method == "OPTIONS" {
@@ -81,11 +81,13 @@ func PerformGetRequest(item string) string {
 
 func addressFinder(content []byte) {
 	checkValid := json.Valid(content)
-	var address location
 
 	if checkValid {
-		json.Unmarshal(content, &address)
-		fmt.Printf("%#v\n", address)
+		fmt.Println("json format valid")
+		var data map[string]interface{}
+		json.Unmarshal(content, &data)
+
+		fmt.Println(data["results"].(string))
 	} else {
 		fmt.Println("json format invlaid")
 	}
