@@ -1,0 +1,1049 @@
+{
+    "html_attributions": [],
+    "next_page_token": "AUacShjoeSqDLnNufJSM-UCzj3dNjFy_YmQcUcvue15q2dfkaXCjBmyvYInvP3pEGasuhj2pTZ1WZHPhncGRWTUyPoDUqRaWX9v-iv-rb7iqE6NhgP0hg72IkWJSXgx775BAKQzCgJz07__3ZrjhAySoJaLjPaE4tjudN1hQgyiQ8CYjGO2WnRkTMsQmh7l-TTBZnWntAhHcnQJf86rKxpv2q031H0ee83ait035uPZrrtg7HvnmguL7oaFH8iqlPDJGsWma_G3amKPld7jOMojIlicfrlnbRIJkL1DCi1qGjJv6sBUNJYi_IaRFfGJM6xzlf9qXAUjt462IgX2MkqwM9VchJheqqAgW_PzXNn9y0DU_ePUJI_IJ4zxAGyg4ljwYI-6FQUj_maKQg3ZRzrtPRHTCEuWRztUmGOlv-lf6xcO3WGCW2J_w4J90XDXj",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "362 Lacewood Dr, Halifax, NS B3S 1M7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6571588,
+                    "lng": -63.6700187
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65856082989272,
+                        "lng": -63.66868582010727
+                    },
+                    "southwest": {
+                        "lat": 44.65586117010728,
+                        "lng": -63.67138547989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Pizza Hut Halifax",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 491,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/107984904221964704088\"\u003ePizza Hut\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShiSPCgK5bkUPN-CTi3e6bZDPooyseG2WAqICuX1r-VQxngyq7QJK0zP4HPUWRXBbi6HUZqkgKLcPJBZB9Lom6lr5FMSBW0urNSJDcWN4nyAU7gXDwktLSG7dmLZ_gy4N01wHqO9AW4NtgV60L6LJsul11UZrgWC5N2XwcqiSiZfTtdp",
+                    "width": 874
+                }
+            ],
+            "place_id": "ChIJTwYHiEQgWksR801dTOf0Uqg",
+            "plus_code": {
+                "compound_code": "M84H+VX Halifax, Nova Scotia",
+                "global_code": "87PRM84H+VX"
+            },
+            "price_level": 2,
+            "rating": 3.7,
+            "reference": "ChIJTwYHiEQgWksR801dTOf0Uqg",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 249
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "30 Farnham Gate Rd, Halifax, NS B3M 3E3, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6727329,
+                    "lng": -63.66550489999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.67408392989272,
+                        "lng": -63.66412307010728
+                    },
+                    "southwest": {
+                        "lat": 44.67138427010727,
+                        "lng": -63.66682272989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Jessy's Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116419118523917329781\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhOAg_nyq-Vs-qZuas1QyIzHys-PpW5gpCCiYjqTlX8ADbQGdxOOeC6cKDnjzptp6r0uul2EFvBRbCL7Hc7GqBZrg_B2VjTH5NgEARvngSTCxUHyWMS5hE7paddCSoKF8jMDR0yPYd7Wb6JaQ3tKd29OqoMUpNnvwAzj4xmIgUotBGa",
+                    "width": 768
+                }
+            ],
+            "place_id": "ChIJR6ZnbYsgWksRX4hnV03Tx5A",
+            "plus_code": {
+                "compound_code": "M8FM+3Q Halifax, Nova Scotia",
+                "global_code": "87PRM8FM+3Q"
+            },
+            "price_level": 1,
+            "rating": 3.9,
+            "reference": "ChIJR6ZnbYsgWksRX4hnV03Tx5A",
+            "types": [
+                "meal_delivery",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 140
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7 Langbrae Dr, Halifax, NS B3M 4H3, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6702783,
+                    "lng": -63.66332939999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.67155482989272,
+                        "lng": -63.66197177010728
+                    },
+                    "southwest": {
+                        "lat": 44.66885517010728,
+                        "lng": -63.66467142989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Pizzadelic",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/101597881155148098093\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhU9Pitn8KsNKVQu-UCDlw-yQWYHrcn4j5EVO8bH8qnekANu2CiYbCuT1KSj_fkgNT_nxjv3sgYr3gyRTTPPSPtGZEOQBqwzrF-laLIvoIYO2pCXEZLKsBWVRNeSonmnn5lq0iHhCA2M7c1XFyoaLZ3ScgDETYQ0Ydkg4Oomv-a8uhI",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJPe0QEfUgWksRJU4TBwT-adE",
+            "plus_code": {
+                "compound_code": "M8CP+4M Halifax, Nova Scotia",
+                "global_code": "87PRM8CP+4M"
+            },
+            "rating": 4.2,
+            "reference": "ChIJPe0QEfUgWksRJU4TBwT-adE",
+            "types": [
+                "meal_delivery",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 226
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "256 Bedford Hwy, Halifax, NS B3M 2K6, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6772979,
+                    "lng": -63.6494794
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.67868267989272,
+                        "lng": -63.64802912010727
+                    },
+                    "southwest": {
+                        "lat": 44.67598302010727,
+                        "lng": -63.65072877989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Tomaso's Pizzeria",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/103352357731665784714\"\u003eVictoria McCaig\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjh4n3UnZDRNCx07QILa0ElzzPzYYmtIuxGgDCgWsAup2DNeh5y68_UXJL1Go2IA2FYlpjpLDNtwt9LJauAQWHeECcsVFpGyhkyex3fen8BFlrtLzaRYTGoxNKg_Bsi8DxVAOlvWHv5KWSXdY2pNlqwq7SM9LN11Abh3a47jSdgg-67",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJ7QdGiu4gWksR1oRaa6S9oV4",
+            "plus_code": {
+                "compound_code": "M9G2+W6 Halifax, Nova Scotia",
+                "global_code": "87PRM9G2+W6"
+            },
+            "rating": 4.5,
+            "reference": "ChIJ7QdGiu4gWksR1oRaa6S9oV4",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 126
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "287 Lacewood Dr, Halifax, NS B3M 3Y7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6641399,
+                    "lng": -63.6586368
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.66552387989271,
+                        "lng": -63.65720922010728
+                    },
+                    "southwest": {
+                        "lat": 44.66282422010727,
+                        "lng": -63.65990887989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Pizza Land",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1333,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/109922285514338331118\"\u003ePizza Land\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShiB-Btaw6RDQIXQgzDuVZaSjV5rJh8hgPHHCe-pIrD5YXKC69970Hip2Jvg5ZjRlFmoysHpMDwnGE4eKB-Sl43stJA0BFmeteK6TdxCHG18_qU1pVyxM98akugGPHN75O3u5KCoPIsfGCVHVacPDqWHWsSoh0-2nSSnFMiyM4BvWEM",
+                    "width": 2000
+                }
+            ],
+            "place_id": "ChIJjShxUFcgWksR4FsxGFfw4Fk",
+            "plus_code": {
+                "compound_code": "M87R+MG Halifax, Nova Scotia",
+                "global_code": "87PRM87R+MG"
+            },
+            "price_level": 1,
+            "rating": 4.2,
+            "reference": "ChIJjShxUFcgWksR4FsxGFfw4Fk",
+            "types": [
+                "meal_delivery",
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 119
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "480 Parkland Dr, Halifax, NS B3S 1P9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6709982,
+                    "lng": -63.676545
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.67236492989273,
+                        "lng": -63.67506667010728
+                    },
+                    "southwest": {
+                        "lat": 44.66966527010728,
+                        "lng": -63.67776632989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Domino's Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2309,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/106536314924618383357\"\u003eDomino&#39;s Pizza\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShj7nwEnuq3ZtEL0ueTXqt0dj9QdNle2rUCd13YLMZ26sBEhulwsO88OaNqsNR8A82gPMv-NWUm4PY2m5CG-JqoyugkxiLUaeP8S5lHw_WJq3-bq0SPOXCJ9t_0-D5tdz55erA-Q3MEnhC-bIH1K_tMMWevfkuQtsh4XeW3eq43gWgAE",
+                    "width": 1732
+                }
+            ],
+            "place_id": "ChIJi4Wbaos9yUwRiqJliTSd0Zk",
+            "plus_code": {
+                "compound_code": "M8CF+99 Halifax, Nova Scotia",
+                "global_code": "87PRM8CF+99"
+            },
+            "price_level": 1,
+            "rating": 3.9,
+            "reference": "ChIJi4Wbaos9yUwRiqJliTSd0Zk",
+            "types": [
+                "meal_delivery",
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 169
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "215 Chain Lake Dr, Halifax, NS B3S 1C9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6536936,
+                    "lng": -63.6788988
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65507012989272,
+                        "lng": -63.67749097010728
+                    },
+                    "southwest": {
+                        "lat": 44.65237047010728,
+                        "lng": -63.68019062989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Downtown Pizza - Halifax",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/106438618072755103337\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShgw2FDSxCckfIgyoHLyfijUt4FKUQzAWE_RVCF-m4aHe_soyazz-AS4koeFUjfoJk8QswEmVLgYrrWgX0RA1cW1znot26kNB_nKZ3L55ZdIU2S9MBTJs-cgPQl_A4rCV5Fxh-t7CDuUGS887pBPXQ9OkLI5_t615g-m9_8tdESaXtgN",
+                    "width": 1280
+                }
+            ],
+            "place_id": "ChIJmaWDdDshWksRZKJgzzin09E",
+            "plus_code": {
+                "compound_code": "M83C+FC Halifax, Nova Scotia",
+                "global_code": "87PRM83C+FC"
+            },
+            "rating": 4.3,
+            "reference": "ChIJmaWDdDshWksRZKJgzzin09E",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 177
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "278 Lacewood Dr, Halifax, NS B3M 3M9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6608276,
+                    "lng": -63.6559687
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.66226787989272,
+                        "lng": -63.65466822010728
+                    },
+                    "southwest": {
+                        "lat": 44.65956822010728,
+                        "lng": -63.65736787989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "King of Donair",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/109202510814289394470\"\u003eIlona Kutuzova\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhTDPGYTkiBVYUph-2TtQ_t0Nf6BDCEM1fjbg_Kk78arQE-ZXkThzxdkIj_8AtmOHzIqazF73kNYGJ3q6b9ctrpqEZwQKl-XCQIuf42yAz3UIwqE0CVpI2Q6ux6T9iOD30gUwzgDYue_Zb0Kf0Aos7_Cv1uijs7aaLP8HJsMcEjWNqE",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJN9uL1FAgWksRnj6Z7Y1wQVA",
+            "plus_code": {
+                "compound_code": "M86V+8J Halifax, Nova Scotia",
+                "global_code": "87PRM86V+8J"
+            },
+            "price_level": 1,
+            "rating": 3.5,
+            "reference": "ChIJN9uL1FAgWksRnj6Z7Y1wQVA",
+            "types": [
+                "meal_delivery",
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 312
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "188 Bedford Hwy, Halifax, NS B3M 2K1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6744852,
+                    "lng": -63.6472654
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.67591077989273,
+                        "lng": -63.64578927010729
+                    },
+                    "southwest": {
+                        "lat": 44.67321112010729,
+                        "lng": -63.64848892989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Caissie Pizza & Donair",
+            "photos": [
+                {
+                    "height": 688,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/100124702602909389741\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShj2thnlqA6iSNm6swDRfNLwsK-5GcP6-jNd3x6yt-g0YhxlfhougNp3b-FCHr0x8qaGPwpIptvS2hGDSwOqKopk_x4-SmBMCn1MA8RHqxvbRyUE7HliKgVeQdRfva4Gu_sNCa0o_-dSkDNJy9hL39FPfVaWQ8yHWlbeOVP_M_p-OQMB",
+                    "width": 1213
+                }
+            ],
+            "place_id": "ChIJHawaZnchWksRkK2ruC3TS0g",
+            "plus_code": {
+                "compound_code": "M9F3+Q3 Halifax, Nova Scotia",
+                "global_code": "87PRM9F3+Q3"
+            },
+            "rating": 0,
+            "reference": "ChIJHawaZnchWksRkK2ruC3TS0g",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 0
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "70 Lacewood Dr, Halifax, NS B3M 2P1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.660903,
+                    "lng": -63.6376132
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.66222437989272,
+                        "lng": -63.63632827010728
+                    },
+                    "southwest": {
+                        "lat": 44.65952472010728,
+                        "lng": -63.63902792989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Greco Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1440,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116312749142181024316\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjq4BlV7RPRJ_YBWNhjQ4MSzyuObVsf1bt84G_qjoKsy6dkSOqQ5gAQk-OmVlrU-3XEIl6eFk8IXJwGi34fBBUyNfoWjtdHLrBPdfrGIflSp_s89c4Tv9suwQJeToEdJHnWRQeeVJHaJQ24zvP1RmvETIfn2pxMtB9VwbT2aQ6BpGqy",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJ-QNPE6ohWksRXc8vFSgUq4U",
+            "plus_code": {
+                "compound_code": "M966+9W Halifax, Nova Scotia",
+                "global_code": "87PRM966+9W"
+            },
+            "price_level": 2,
+            "rating": 3.4,
+            "reference": "ChIJ-QNPE6ohWksRXc8vFSgUq4U",
+            "types": [
+                "meal_delivery",
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 230
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "209 Chain Lake Dr, Halifax, NS B3S 1C9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6521876,
+                    "lng": -63.6771096
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65354892989272,
+                        "lng": -63.67577692010728
+                    },
+                    "southwest": {
+                        "lat": 44.65084927010728,
+                        "lng": -63.67847657989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Pizza Delight",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3480,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/114028090165714365353\"\u003eMegan L\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjWzMgVTtFxdt76MyK9lK0Rfqw29FomEoo7qel6FXoUXk9dz-5IumsK2aQpM-6ktqi5rEFXF1EnU_MqVaDyZweRvI-7qoFPY18h462dsEwDWI5eRr8XJXjOtR0mfP2rP8WEblhjOWxgfwiIpltyoTeUQti887R-DKZ3TjsR4LtRFWxi",
+                    "width": 4640
+                }
+            ],
+            "place_id": "ChIJZzNurEAgWksRV49M4Ont5gw",
+            "plus_code": {
+                "compound_code": "M82F+V5 Halifax, Nova Scotia",
+                "global_code": "87PRM82F+V5"
+            },
+            "price_level": 2,
+            "rating": 3.6,
+            "reference": "ChIJZzNurEAgWksRV49M4Ont5gw",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 563
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "194A Chain Lake Dr, Halifax, NS B3S 1C5, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6498695,
+                    "lng": -63.6744222
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65114462989272,
+                        "lng": -63.67354947010728
+                    },
+                    "southwest": {
+                        "lat": 44.64844497010728,
+                        "lng": -63.67624912989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Boston Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116355280987977431746\"\u003eJobin Basani\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShiTekVeWWkJL0yImOEHOj0Cy479b_3sSJwTIXEAFbp6v6ADU_7Hu2tpMucxte4cZuN7DlJwXVINv_43cxEzYzkh6Z5VGe28cbHjX0HadtMt23TmAQHcnaTY2Et_tQNd7L1XMRDvw6EDiUiDP9KxfaL_SX7uGfNDHXxPMTBdDJEXz2QS",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJoTkQ-jggWksRT25Q0-Vypw0",
+            "plus_code": {
+                "compound_code": "J8XG+W6 Halifax, Nova Scotia",
+                "global_code": "87PRJ8XG+W6"
+            },
+            "price_level": 2,
+            "rating": 4,
+            "reference": "ChIJoTkQ-jggWksRT25Q0-Vypw0",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1047
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "56 Supreme Ct #3, Halifax, NS B3N 2L4, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6576935,
+                    "lng": -63.6339625
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65907537989273,
+                        "lng": -63.63252642010728
+                    },
+                    "southwest": {
+                        "lat": 44.65637572010728,
+                        "lng": -63.63522607989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Panada Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/104193027015608312494\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhOZfquoeJPyhGemUATPPHyCCWqg8Elf2uomd5t5Nal_kiPzB3RsKkWU3p2hXo3GJGB2Y1vAXpow9ORrXVKslYVvZrjWCuHxrC3TIeQmnexASJS9qO6Vx_zJVecJJCw9LfhAewoTkZ1fApWvWtKgha19nDsnYBoijeI5e2iGKbK447R",
+                    "width": 2448
+                }
+            ],
+            "place_id": "ChIJsSdJs5khWksRsx3PqOUIr6M",
+            "plus_code": {
+                "compound_code": "M958+3C Halifax, Nova Scotia",
+                "global_code": "87PRM958+3C"
+            },
+            "rating": 4,
+            "reference": "ChIJsSdJs5khWksRsx3PqOUIr6M",
+            "types": [
+                "meal_delivery",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 220
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "28 Titus St, Halifax, NS B3M 2M4, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.65986789999999,
+                    "lng": -63.63508390000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.66127617989272,
+                        "lng": -63.63357462010728
+                    },
+                    "southwest": {
+                        "lat": 44.65857652010728,
+                        "lng": -63.63627427989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Alexandra's Pizza Fairview",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 768,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/114857359613162775247\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhYgeZmPBgtvtHELfVUXB18AWkThRw0hXW5Fppk2dAMhzVVuvy-XODpJefWTcjVPmv1p3TAh938KM9HEfK6ZrIGuD1yXUVMkrCfkSHxc4Mgfx8nbVx5VVnCGR-W1m2fl0qFRYDhBx3FGnnJ9DMCTAtADC6T5q1MTt6ECaYz0YgEwsS4",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJp1zTsakhWksRfxd-qtOdNC0",
+            "plus_code": {
+                "compound_code": "M957+WX Halifax, Nova Scotia",
+                "global_code": "87PRM957+WX"
+            },
+            "price_level": 2,
+            "rating": 3.8,
+            "reference": "ChIJp1zTsakhWksRfxd-qtOdNC0",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 288
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3450 Joseph Howe Dr, Halifax, NS B3L 4H7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6547335,
+                    "lng": -63.6308904
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65619597989272,
+                        "lng": -63.62955492010727
+                    },
+                    "southwest": {
+                        "lat": 44.65349632010728,
+                        "lng": -63.63225457989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "PZZA.CO Halifax NS",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1280,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/102970306858774296563\"\u003eA Google User\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjdUtYiL2ShaKYwpG20hYDojHDb4srVXqjZiRYx-9A1gPiHzZBrR4u0JTUHoew8HwfzOqxiHZWpCOk0CjDMsdDe2qNHUTisZ-u0TeS5E-mv-rQP6oZ9_-06o9vTpZN7-2oFi7Ob3_tXOcQIDOSi3Y07iJ3UNARgcYJKuIvkicliKpHn",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJ9b69LKQhWksRZiUUvCwAeAY",
+            "plus_code": {
+                "compound_code": "M939+VJ Halifax, Nova Scotia",
+                "global_code": "87PRM939+VJ"
+            },
+            "rating": 4.5,
+            "reference": "ChIJ9b69LKQhWksRZiUUvCwAeAY",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 297
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "998 Parkland Dr, Halifax, NS B3M 4N9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6834405,
+                    "lng": -63.6763071
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.68475687989272,
+                        "lng": -63.67499672010727
+                    },
+                    "southwest": {
+                        "lat": 44.68205722010727,
+                        "lng": -63.67769637989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Little Caesars Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/113480580842643973218\"\u003eVatsal Barot\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShggVND4jqe-EzGSvxUnvzszzuTuvhQK-Nn_aYc15wwhoKwjgtFQMR8HzCh5iKOUuqhXWbSJedtSrFGK9fsY-cMAIoeXi5vSxOrsNXfUn9GGt4rehWPvuzo1iCTIz7TVutUsy7ZRAHYdQWsdkXp9fODdzDLIjRF8DikWUOcqnh3NrP-a",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJnyRjeZsgWksR3hFNcjO_FiI",
+            "plus_code": {
+                "compound_code": "M8MF+9F Halifax, Nova Scotia",
+                "global_code": "87PRM8MF+9F"
+            },
+            "price_level": 1,
+            "rating": 4,
+            "reference": "ChIJnyRjeZsgWksR3hFNcjO_FiI",
+            "types": [
+                "meal_delivery",
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 517
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3506 Dutch Village Rd, Halifax, NS B3N 2S1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6557172,
+                    "lng": -63.6324172
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.65706052989272,
+                        "lng": -63.63090832010727
+                    },
+                    "southwest": {
+                        "lat": 44.65436087010728,
+                        "lng": -63.63360797989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Papa Mario's Pizza",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/105178937924728569376\"\u003ePethrona Russell\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjyad_CQ9Qajt1X_kTxrU5caUwfFmDw4NTRe5tj9i63F_xEYFYkKhKKXfzSiVLecJfAmdPodSb4DcV_cZl9H5pZRHdyrxBBq3RIexkIa9uxJIt1JwWnlf3_A0OoVN370mG2E4eboeHzHXUNEQkJv4GZ4EEAvN1FcRg-SKKnAj5bq8OM",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJB9Z4r5AhWksRij-3QTNVLSw",
+            "plus_code": {
+                "compound_code": "M949+72 Halifax, Nova Scotia",
+                "global_code": "87PRM949+72"
+            },
+            "rating": 3.8,
+            "reference": "ChIJB9Z4r5AhWksRij-3QTNVLSw",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 209
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "122 Kearney Lake Rd, Halifax, NS B3M 3P1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6837455,
+                    "lng": -63.6743227
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.68522082989272,
+                        "lng": -63.67298142010727
+                    },
+                    "southwest": {
+                        "lat": 44.68252117010728,
+                        "lng": -63.67568107989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Kenny's Pizza Kearney Lake Rd",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/107762529086617450118\"\u003eJohn Hayne\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShjVkEkVglzR7vSCx_sXGYhg_kjRY4eoqLL2sVTIdfCBEUVfsk_Ef42fX1xvvXCheQlZtJTODW5fWOpoEv9WZFgPlqd_kyBNkUwW-An0tX2sxjpKeve-8OS0JvzHtt3SeKjEnoz51JpPhXfoMReWhF-cCmRb7v2vEi4S-HhHQ1aEsYD1",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJaeOuqcshWksRwZp6xzfLo78",
+            "plus_code": {
+                "compound_code": "M8MG+F7 Halifax, Nova Scotia",
+                "global_code": "87PRM8MG+F7"
+            },
+            "price_level": 2,
+            "rating": 4.3,
+            "reference": "ChIJaeOuqcshWksRwZp6xzfLo78",
+            "types": [
+                "meal_takeaway",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 150
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "117 Kearney Lake Rd Unit 6, Halifax, NS B3M 4N9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6846229,
+                    "lng": -63.6746729
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.68592157989273,
+                        "lng": -63.67334407010729
+                    },
+                    "southwest": {
+                        "lat": 44.68322192010729,
+                        "lng": -63.67604372989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Randy's Pizza - Kearney Lake",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/114397965410546612291\"\u003eDan\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShgCIF-2CTx7fySIsOajD8Cx-Orp_vif1s9sXPlhp37iTaWJCkYGPFLiekRx55KEH0NMxp2MSr5kaYLQSU7ATJfoEkh9WMEZTe0PmVdwlM1CPfr_NimTgPqV6O08fLluLc1AUbLlfrAs4X2_7D_FU-6t1rHT6_HSIVRR0hKMM4xRq3s4",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJ-5fUiuEhWksRf7Nq4V4ymiM",
+            "plus_code": {
+                "compound_code": "M8MG+R4 Halifax, Nova Scotia",
+                "global_code": "87PRM8MG+R4"
+            },
+            "rating": 4.6,
+            "reference": "ChIJ-5fUiuEhWksRf7Nq4V4ymiM",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 141
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "14 Titus St, Halifax, NS B3N 2Y9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 44.6590618,
+                    "lng": -63.6342539
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 44.66053847989272,
+                        "lng": -63.63281152010728
+                    },
+                    "southwest": {
+                        "lat": 44.65783882010728,
+                        "lng": -63.63551117989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Bella Vita Pizzeria Fairview",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4000,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/111445520815418393592\"\u003etoni albo\u003c/a\u003e"
+                    ],
+                    "photo_reference": "AUacShhRroT3fau30iCdBFTN_pSABxOWQokUaF02goPTls9_zts-hSVAqUlsX2j3KiHSlJ3ekggRoWhuoxhORnUHBDXHUKJiOE2KVpux3bKaENCYTFmumc7Ik0MzwAwcWqwKsBErot908aFhmlPtHGN8JedgrR1GadS40_QfeocrpAd6EzeV",
+                    "width": 5000
+                }
+            ],
+            "place_id": "ChIJJwJFfmchWksRkmxOhg0w0sI",
+            "plus_code": {
+                "compound_code": "M958+J7 Halifax, Nova Scotia",
+                "global_code": "87PRM958+J7"
+            },
+            "rating": 4.5,
+            "reference": "ChIJJwJFfmchWksRkmxOhg0w0sI",
+            "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 56
+        }
+    ],
+    "status": "OK"
+}
