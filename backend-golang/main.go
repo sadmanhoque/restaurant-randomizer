@@ -79,15 +79,45 @@ func PerformGetRequest(item string) string {
 	return result
 }
 
-func addressFinder(content []byte) {
-	checkValid := json.Valid(content)
+func addressFinder(jsonData []byte) {
+	checkValid := json.Valid(jsonData)
 
 	if checkValid {
-		fmt.Println("json format valid")
+		//fmt.Println("json format valid")
 		var data map[string]interface{}
-		json.Unmarshal(content, &data)
+		err := json.Unmarshal([]byte(jsonData), &data)
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
 
-		fmt.Println(data["results"].(string))
+		results, found := data["results"].([]interface{})
+		if !found {
+			fmt.Println("Results not found in JSON")
+			return
+		}
+
+		//fmt.Println(len(results))
+		//fmt.Println(rand.Intn(len(results) - 0))
+		//result := results[rand.Intn(len(results) - 0)]
+
+		for _, result := range results {
+			resultMap, isMap := result.(map[string]interface{})
+			if !isMap {
+				fmt.Println("Invalid result format")
+				continue
+			}
+
+			name, nameFound := resultMap["name"].(string)
+			// Extract other fields similarly
+
+			if nameFound {
+				fmt.Println("Name:", name)
+			}
+
+			// Print other fields as needed
+		}
+
 	} else {
 		fmt.Println("json format invlaid")
 	}
