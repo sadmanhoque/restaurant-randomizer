@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math/rand"
 	"net/http"
 	"os"
 
@@ -11,12 +12,10 @@ import (
 	"github.com/joho/godotenv"
 )
 
-type location struct {
-	Name        string `json:"name"`
-	Address     string `json:"address"`
-	Hours       string `json:"hours"`
-	Coordinates string `json:"coordinates"`
-}
+// type location struct {
+// 	Name        string `json:"name"`
+// 	Address     string `json:"address"`
+// }
 
 func searchByItem(c *gin.Context) {
 	item := c.Param("item")
@@ -72,54 +71,50 @@ func PerformGetRequest(item string) string {
 	content, _ := io.ReadAll(response.Body)
 
 	//fmt.Println(string(content))
-	result := string(content)
+	//result := string(content)
 	addressFinderValue := content
-	addressFinder(addressFinderValue)
+	result := addressFinder(addressFinderValue)
 
 	return result
 }
 
-func addressFinder(jsonData []byte) {
+func addressFinder(jsonData []byte) string {
 	checkValid := json.Valid(jsonData)
 
 	if checkValid {
-		//fmt.Println("json format valid")
 		var data map[string]interface{}
 		err := json.Unmarshal([]byte(jsonData), &data)
 		if err != nil {
 			fmt.Println("Error:", err)
-			return
+			return "error"
 		}
 
 		results, found := data["results"].([]interface{})
 		if !found {
 			fmt.Println("Results not found in JSON")
-			return
+			return "error"
 		}
 
-		//fmt.Println(len(results))
-		//fmt.Println(rand.Intn(len(results) - 0))
-		//result := results[rand.Intn(len(results) - 0)]
+		result := results[rand.Intn(len(results)-0)]
 
-		for _, result := range results {
-			resultMap, isMap := result.(map[string]interface{})
-			if !isMap {
-				fmt.Println("Invalid result format")
-				continue
-			}
-
-			name, nameFound := resultMap["name"].(string)
-			// Extract other fields similarly
-
-			if nameFound {
-				fmt.Println("Name:", name)
-			}
-
-			// Print other fields as needed
+		resultMap, isMap := result.(map[string]interface{})
+		if !isMap {
+			fmt.Println("Invalid result format")
+			return "error"
 		}
+
+		name, nameFound := resultMap["name"].(string)
+
+		if nameFound {
+			fmt.Println("Name:", name)
+			return name
+		}
+
+		return "error"
 
 	} else {
 		fmt.Println("json format invlaid")
+		return "error"
 	}
 }
 
