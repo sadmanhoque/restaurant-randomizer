@@ -12,10 +12,11 @@ import (
 	"github.com/joho/godotenv"
 )
 
-// type location struct {
-// 	Name        string `json:"name"`
-// 	Address     string `json:"address"`
-// }
+type location struct {
+	Name string `json:"name"`
+	Lat  string `json:"lat"`
+	Long string `json:"long"`
+}
 
 func searchByItem(c *gin.Context) {
 	item := c.Param("item")
@@ -104,6 +105,9 @@ func addressFinder(jsonData []byte) string {
 		}
 
 		name, nameFound := resultMap["name"].(string)
+		lat := resultMap["geometry"]
+
+		fmt.Println(lat)
 
 		if nameFound {
 			fmt.Println("Name:", name)
