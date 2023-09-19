@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 //import React from "react"
 
-const URL = `http://localhost:8000/books`
-const id = 2;
-const returnURL = `http://localhost:8000/return?id=${id}`
+const URL = `http://localhost:9000/books`
+const id = "pizza";
+const returnURL = `http://localhost:9000/search/:${id}`
 
 function Test() {
     const [temp, setTemp] = useState(0)
@@ -21,11 +21,11 @@ function Test() {
 
     const submitId = async () => {
         const myData = {
-            'id': '2'
+            'id': 'pizza'
         }
 
         const result = await fetch(returnURL, {
-            method: 'PATCH',
+            method: 'GET',
             //headers: {
             //    'Content-Type': 'application/json'
             //},
