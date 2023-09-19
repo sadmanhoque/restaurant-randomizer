@@ -13,17 +13,18 @@ import (
 )
 
 type location struct {
-	Name string `json:"name"`
-	Lat  string `json:"lat"`
-	Long string `json:"long"`
+	Name         string `json:"name"`
+	StoreAddress string `json:"storeAddress"`
+	Error        bool   `json:"error"`
 }
 
 func searchByItem(c *gin.Context) {
 	item := c.Param("item")
 	result := PerformGetRequest(item)
 
-	if result == "" {
+	if result.Error {
 		c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Something went wrong"})
+		fmt.Println(result.Name)
 		return
 	}
 
@@ -45,24 +46,30 @@ func corsMiddleware() gin.HandlerFunc {
 	}
 }
 
-func PerformGetRequest(item string) string {
+func PerformGetRequest(item string) location {
 
 	envErr := godotenv.Load(".env")
 	if envErr != nil {
 		fmt.Println("Could not load .env file")
 		os.Exit(1)
 		fmt.Println("Problem retreiving API key")
-		return ""
+		var result location
+		result.Name = "Problem retreiving API key"
+		result.Error = true
+		return result
 	}
 
 	var apiKey = os.Getenv("API_KEY")
-	var myurl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + item + "&location=44.666070,-63.657702&radius=1000&key=" + apiKey
+	var myurl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + item + "&location=44.647646,-63.590651&radius=1000&key=" + apiKey
 
 	response, err := http.Get(myurl)
 
 	if err != nil {
 		fmt.Println("Problem with executing Google maps API")
-		return ""
+		var result location
+		result.Name = "Problem with executing Google maps API"
+		result.Error = true
+		return result
 	}
 
 	defer response.Body.Close()
@@ -79,46 +86,55 @@ func PerformGetRequest(item string) string {
 	return result
 }
 
-func addressFinder(jsonData []byte) string {
+func addressFinder(jsonData []byte) location {
 	checkValid := json.Valid(jsonData)
+	var output location
 
 	if checkValid {
 		var data map[string]interface{}
 		err := json.Unmarshal([]byte(jsonData), &data)
 		if err != nil {
 			fmt.Println("Error:", err)
-			return "error"
+			output.Name = "error in unmarshaling json data from google"
+			output.Error = true
+			return output
 		}
 
 		results, found := data["results"].([]interface{})
 		if !found {
-			fmt.Println("Results not found in JSON")
-			return "error"
+			//fmt.Println("Results not found in JSON")
+			output.Name = "Nothing found :("
+			output.StoreAddress = "N/A"
+			output.Error = false
+			return output
 		}
 
 		result := results[rand.Intn(len(results)-0)]
 
 		resultMap, isMap := result.(map[string]interface{})
 		if !isMap {
-			fmt.Println("Invalid result format")
-			return "error"
+			//fmt.Println("Invalid result format")
+			output.Name = "error: unexpected json format"
+			output.Error = true
+			return output
 		}
 
-		name, nameFound := resultMap["name"].(string)
-		lat := resultMap["geometry"]
+		//name, nameFound := resultMap["name"].(string)
+		//address := resultMap["formatted_address"].(string)
 
-		fmt.Println(lat)
+		output.Name = resultMap["name"].(string)
+		output.StoreAddress = resultMap["formatted_address"].(string)
 
-		if nameFound {
-			fmt.Println("Name:", name)
-			return name
-		}
+		//fmt.Println(lat)
 
-		return "error"
+		fmt.Println("Name:", output.Name)
+		output.Error = false
+		return output
 
 	} else {
-		fmt.Println("json format invlaid")
-		return "error"
+		//fmt.Println("json format invlaid")
+		output.Name = "error"
+		return output
 	}
 }
 
