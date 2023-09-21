@@ -16,7 +16,7 @@ export default function App() {
       <Test />
       <div className="search-bar-container">
         <SearchBar setResults={setResults} />
-        <SearchResults results={results} />
+        {/*<SearchResults results={results} />*/}
       </div>
     </>
   )
