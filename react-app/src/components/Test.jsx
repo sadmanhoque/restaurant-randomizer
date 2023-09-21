@@ -19,9 +19,9 @@ function Test() {
         fetchData()
     }, [])
 
-    const submitId = async () => {
+    const submitKey = async () => {
         const myData = {
-            'id': 'pizza'
+            'key': 'pizza'
         }
 
         const result = await fetch(returnURL, {
@@ -39,7 +39,7 @@ function Test() {
     return (
         <div className="Test">
             Book API return: {temp}
-            <button onClick={submitId}>Return book</button>
+            <button onClick={submitKey}>Return book</button>
         </div>
     )
 }
