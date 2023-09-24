@@ -1,8 +1,8 @@
-# React + Vite
+### Intro ###
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React+Vite project utilizing the tailwind CSS follow the setup instructions here https://tailwindcss.com/docs/guides/vite
 
-Currently, two official plugins are available:
+To run server use the command `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FYI this is only the instructions for the frontend component of the application, this is setup for the backend-golang project
+in this same repo. To successfully run the application both servers need to be running. For instructions on the backend server use the Readme file in its directory.

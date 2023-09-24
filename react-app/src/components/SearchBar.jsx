@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import { FaSearch } from "react-icons/fa"
-import "./SearchBar.css"
+import { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
-export const SearchBar = ({ setResults }) => {
-    const [input, setInput] = useState("")
+export default function SearchBar({ onSearch }) {
+    const [query, setQuery] = useState('');
 
-    const fetchData = (value) => {
-        fetch(`http://localhost:9000/search/:${value}`)
-            .then((response) => response.json())
-            .then((json) => {
-                //const results = json.filter((user) => {
-                //    return results;
-                //});
-                console.log(json)
-                setResults(json);
-                return json
+    const handleInputChange = (e) => {
+        setQuery(e.target.value);
+    };
 
-            });
-    }
+    const handleSearch = () => {
+        onSearch(query);
+    };
 
-    const handleChange = (value) => {
-        setInput(value)
-        fetchData(value)
-    }
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            onSearch(query);
+        }
+    };
 
     return (
-        <div className='input-wrapper'>
-            <FaSearch id="search-icon" />
-            <input placeholder='Type to search...' value={input} onChange={(e) => handleChange(e.target.value)} />
+        <div>
+            <input
+                type="text"
+                placeholder="Search..."
+                value={query}
+                onChange={handleInputChange}
+                onKeyPress={handleKeyPress}
+            />
+            <button onClick={handleSearch}>Search</button>
         </div>
-    )
+    );
 }

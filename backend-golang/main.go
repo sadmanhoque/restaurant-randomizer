@@ -29,6 +29,7 @@ func searchByItem(c *gin.Context) {
 	}
 
 	c.IndentedJSON(http.StatusOK, result)
+
 }
 
 func corsMiddleware() gin.HandlerFunc {
@@ -74,12 +75,7 @@ func PerformGetRequest(item string) location {
 
 	defer response.Body.Close()
 
-	//fmt.Println("Status code: ", response.StatusCode)
-
 	content, _ := io.ReadAll(response.Body)
-
-	//fmt.Println(string(content))
-	//result := string(content)
 	addressFinderValue := content
 	result := addressFinder(addressFinderValue)
 
@@ -102,7 +98,7 @@ func addressFinder(jsonData []byte) location {
 
 		results, found := data["results"].([]interface{})
 		if !found {
-			//fmt.Println("Results not found in JSON")
+			fmt.Println("Results not found in JSON")
 			output.Name = "Nothing found :("
 			output.StoreAddress = "N/A"
 			output.Error = false
@@ -113,26 +109,22 @@ func addressFinder(jsonData []byte) location {
 
 		resultMap, isMap := result.(map[string]interface{})
 		if !isMap {
-			//fmt.Println("Invalid result format")
+			fmt.Println("Invalid result format")
 			output.Name = "error: unexpected json format"
 			output.Error = true
 			return output
 		}
 
-		//name, nameFound := resultMap["name"].(string)
-		//address := resultMap["formatted_address"].(string)
-
 		output.Name = resultMap["name"].(string)
 		output.StoreAddress = resultMap["formatted_address"].(string)
 
-		//fmt.Println(lat)
-
 		fmt.Println("Name:", output.Name)
 		output.Error = false
+		//fmt.Println(output)
 		return output
 
 	} else {
-		//fmt.Println("json format invlaid")
+		fmt.Println("json format invlaid")
 		output.Name = "error"
 		return output
 	}

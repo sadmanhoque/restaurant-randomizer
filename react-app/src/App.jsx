@@ -1,23 +1,43 @@
 import { useState } from "react"
-import { SearchBar } from "./components/SearchBar";
-import Test from "./components/Test";
-import { SearchResults } from "./components/SearchResults";
+import SearchBar from './components/SearchBar';
+import axios from 'axios';
 
 export default function App() {
-  const [results, setResults] = useState([])
+  const [searchResults, setSearchResults] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSearch = (query) => {
+    // Clear previous search results
+    setSearchResults([]);
+
+    // Perform the GET request here using Axios or any other HTTP library
+    setIsLoading(true);
+
+    axios.get(`http://localhost:9000/search/:${query}`)
+      .then((response) => {
+        setSearchResults(response.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error(error);
+        setIsLoading(false);
+      });
+  };
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-
-      Test Values:
-      <Test />
-      <div className="search-bar-container">
-        <SearchBar setResults={setResults} />
-        {/*<SearchResults results={results} />*/}
-      </div>
-    </>
-  )
+    <div>
+      <h1>Search App</h1>
+      <SearchBar onSearch={handleSearch} />
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : searchResults.error ? (
+        <p>No results found</p>
+      ) : (
+        <div>
+          <h2>{searchResults.name}</h2>
+          <p>{searchResults.storeAddress}</p>
+        </div>
+      )}
+    </div>
+  );
 }
